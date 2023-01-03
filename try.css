@@ -123,6 +123,7 @@ svg{
     font-size: 12px;
     letter-spacing: 4.5px;
 }
+      /* media */
 @media(max-width:768px){
     .menu-btn{
         display:block; 
