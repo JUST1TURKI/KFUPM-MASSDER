@@ -352,12 +352,14 @@ body.subject{
 }
 .slide:before {
     content: '';
+    background: #0b6623;
+    opacity: 0.5;
     width: 50%;
     height: 12px;
     border-radius: 0 20px 0 0;
-    border-top-width: 2px;
-    border-right-width: 2px;
-    border-left-width: 2px;
+    border-top-width: 3px;
+    border-right-width: 3px;
+    border-left-width: 3px;
     border-top-style: solid;
     border-right-style: solid;
     border-left-style: solid;
