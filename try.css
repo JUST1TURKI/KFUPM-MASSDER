@@ -53,11 +53,14 @@ img{
 }
 .main-nav ul a{
     padding: 7px;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .main-menu li a:hover{
     color: green;
+}
+.style-menu{
+    transition: 0.3s;
 }
 .style-menu a{
     background-color: #c2fbd7;
@@ -243,7 +246,7 @@ body.subject{
 }
 .course{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-gap: 35px;
     margin-top: 5%;
     place-items: center;
@@ -270,7 +273,7 @@ body.subject{
 @media(max-width:768px){
     .course{
         display: grid;
-        grid-template-columns: repeat(3,1fr); 
+        grid-template-columns: repeat(2,1fr); 
     }
     .course li a{
         letter-spacing: 3px;
@@ -286,6 +289,88 @@ body.subject{
     }
 
 } 
-/* 32,43 */
+/* MATH001 */
+.course-svg{
+    animation: fade 1s ease-in 0.3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    width: 80%;
+    position: relative;
+    left: 20%;
+}
+.course-sub{
+    background: linear-gradient(45deg, rgba(35,51,41,1) 15%, rgba(98,209,112,1) 100%);
+     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fade 2s ease-in 0.3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    pointer-events: none;
+    font-size: 60px;
+    position: relative;
+    right: 50%;
+    top: 5px;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
 
-
+    }
+}
+.course-detail{
+    animation: fade 1s ease-in 0.3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    font-size: 13px;
+    color: slategrey;
+    display: flex;
+    position: relative;
+    right: 50%;
+    top: 15px;
+}
+.course-slide{
+    color:#0b6623 ;
+    font-size: 3rem;
+    margin-bottom: 6%;
+    position: relative;
+    left: 6%;
+}
+.slide{
+        color:white;
+        width: 190px;
+        height: 100px;
+        margin: 0 auto;
+        margin-top: 50px;
+        position: relative;
+        bottom: 50%;
+        border:2px solid rgb(180 180 180 / 44%);
+        border-radius: 0 6px 6px 6px;
+        box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.59);
+}
+.slide:before {
+    content: '';
+    width: 50%;
+    height: 12px;
+    border-radius: 0 20px 0 0;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-left-width: 2px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-top-color: rgba(180, 180, 180, 0.44);
+    border-right-color: rgba(180, 180, 180, 0.44);
+    border-left-color: rgba(180, 180, 180, 0.44);
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    position: absolute;
+    top: -16px;
+    left: -2px;
+    
+}
