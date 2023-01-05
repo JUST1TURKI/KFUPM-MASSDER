@@ -389,9 +389,10 @@ body.subject{
 }
 .svg-course{
     fill: black;
-    width: 18%;
+    width: 22%;
     margin-left: 10%;
     pointer-events: none;
+    min-width: 170px;
 }
 #slide{
     color: white;
