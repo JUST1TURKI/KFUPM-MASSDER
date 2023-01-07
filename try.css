@@ -412,7 +412,7 @@ body.subject{
     fill: black;
     width: 22%;
     pointer-events: none;
-    min-width: fit-content;
+    min-width: 174px;
 }
 #slide{
     color: white;
