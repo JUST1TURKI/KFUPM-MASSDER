@@ -275,7 +275,7 @@ body.subject{
 }
 
 /* media */
-@media(max-width:768px){
+@media(max-width:800px){
     .course{
         display: grid;
         grid-template-columns: repeat(2,1fr); 
@@ -287,14 +287,17 @@ body.subject{
     
     }
 }
-@media(max-width:480px){
+@media(max-width:500px){
     .course{
         display: grid;
-        grid-template-columns: repeat(2,1fr); 
+        grid-template-columns: repeat(1,1fr); 
     }
 
 } 
 /* MATH001 */
+.case-subject{
+    padding: 20px;
+}
 .course-svg{
     animation: fade 1s ease-in 0.3s;
     animation-fill-mode: forwards;
@@ -342,13 +345,30 @@ body.subject{
     pointer-events: none;
     color:#0b6623 ;
     font-size: 3rem;
-    margin-bottom: 6%;
-    position: relative;
-    left: 6%;
-    margin-top: 30px;
     letter-spacing: 1.3px;
 
 }
+.course-slide,.course-note,.course-old,.course-q,.course-vid,.course-pro,.course-hws,.course-lab{
+    display: none;
+    transition: all 500ms ease-out;
+}
+#btn{
+    cursor: pointer;
+    color: white;
+    font-size: 11px;
+    letter-spacing: 1px;
+    padding: 5px;
+    background: #085c0c7d;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    transition: 0.5s;
+}
+
+#btn:hover{
+    background-color: #0c8f2f;
+}
+
 .slide{
         color:white;
         width: 190px;
@@ -359,7 +379,7 @@ body.subject{
         bottom: 50%;
         border:2px solid rgb(180 180 180 / 44%);
         border-radius: 0 6px 6px 6px;
-        box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.59);
+        box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.59);       
 }
 .slide:before {
     content: '';
@@ -387,12 +407,12 @@ body.subject{
     left: -2px;
     
 }
+
 .svg-course{
     fill: black;
     width: 22%;
-    margin-left: 10%;
     pointer-events: none;
-    min-width: 170px;
+    min-width: fit-content;
 }
 #slide{
     color: white;
@@ -432,4 +452,43 @@ body.subject{
     top: -35px;
     left: -2px;
 }
+/* Media */
+@media(max-width:800px){
+    .course-svg{
+        width:45%;
+    }
+    .case-subject {
+        padding: 20px;
+        position: relative;
+        bottom: 50%;
+    }
+    #course-sub{
+        position: initial;
+    }
+    .course-detail{
+        position: initial;
+    }
+    #course-slide{
+        margin-left: 10px;
+    }
+    .svg-course{
+        width: 35%;
+        margin-left: 10px;
+        min-width: fit-content;
+    }
+    #btn{
+        margin-left: 10px;
+    }
+
+    
+}
+@media(max-width:500px){
+    .svg-course{
+        width: 55%;
+    }
+    .course-svg{
+        width:60%;
+    }
+
+} 
 
