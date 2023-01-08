@@ -94,14 +94,3 @@ function toggleShowLab(){
     }
     
 }
-
-
-
-
-function change( el )
-{
-    if ( el.value === "show" )
-        el.value = "Hide";
-    else
-        el.value = "show";
-}
