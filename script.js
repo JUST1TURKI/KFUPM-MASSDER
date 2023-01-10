@@ -94,3 +94,9 @@ function toggleShowLab(){
     }
     
 }
+const majors = document.querySelectorAll('#majors');
+function alertBtn(){
+    alert('Sorry, We are still working on improving them.');
+}
+Array.from(majors).forEach(major => major.addEventListener('click', alertBtn));
+
