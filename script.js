@@ -96,7 +96,7 @@ function toggleShowLab(){
 }
 const majors = document.querySelectorAll('#majors');
 function alertBtn(){
-    alert('Sorry, We are still working on improving them.');
+    alert('Sorry, We are still working on improving them. Go to KFUPM Rescources web');
 }
 Array.from(majors).forEach(major => major.addEventListener('click', alertBtn));
 
