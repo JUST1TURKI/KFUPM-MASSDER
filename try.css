@@ -90,7 +90,7 @@ img{
     padding: 30px;
 }
 svg{
-    width: 120%; 
+    width: 100%; 
 }
 .kfupm{
     font-size: 70px;
@@ -238,8 +238,8 @@ svg{
 @media(max-width:390px){
     .case{
         position: relative;
-        top: 120%;
-    }
+        top: 70%;
+        }
     svg{
         position: relative;
         top: 100px;
