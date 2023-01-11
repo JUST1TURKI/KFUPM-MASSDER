@@ -90,7 +90,7 @@ img{
     padding: 30px;
 }
 svg{
-    width: 110%;    
+    width: 120%; 
 }
 .kfupm{
     font-size: 70px;
@@ -160,6 +160,15 @@ svg{
     svg {
         width: 200%;
     }
+    .svg-subject{
+        display: none;
+    }
+    .case-subject{
+        display: none;
+    }
+    #course-slide{
+        margin-top: 10%;
+    }
 
  }
 @media(max-width:800px){
@@ -217,8 +226,25 @@ svg{
    .case{
     position: relative;
     top: 30%;
+    left: 10%;
    }
     
+}
+@media(max-width:500px){
+    svg{
+        width: 115%;
+    }
+}
+@media(max-width:390px){
+    .case{
+        position: relative;
+        top: 120%;
+    }
+    svg{
+        position: relative;
+        top: 100px;
+        width: 125%;
+    }
 }
 /* Subject page */
 body.subject{
@@ -377,7 +403,7 @@ body.subject{
 
 .slide{
         color:white;
-        width: 190px;
+        width: 195px;
         height: 100px;
         margin: 0 auto;
         margin-top: 50px;
@@ -414,6 +440,7 @@ body.subject{
     
 }
 .slide a{
+    font-size: 14px;
     color: darkgray;
     position: absolute;
     transform: translate(-50%, -50%);
