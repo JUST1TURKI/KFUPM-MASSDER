@@ -90,7 +90,7 @@ img{
     padding: 30px;
 }
 svg{
-    width: 100%; 
+    width: 90%; 
 }
 .kfupm{
     font-size: 70px;
@@ -126,16 +126,21 @@ svg{
     font-family: 'Fascinate Inline', cursive;
     color: #0c8f2f;
 }
-.tag{
+.tag a{
     padding-left: 5px;
-    font-size: 12px;
-    letter-spacing: 4.5px;
+    font-size: 13px;
+    letter-spacing: 2px;
     color: aliceblue;
+    transition: 0.5s;
+}
+.tag :hover{
+    color: skyblue;
+    
 }
  /* media */
 @media(min-width:1400px){
     .container {
-        width: 100%;
+        width: 1000%;
         max-width: 1200px;
         margin: auto;
     }
@@ -158,7 +163,7 @@ svg{
         left: 50%;
     }
     svg {
-        width: 200%;
+        width: 150%;
     }
     .svg-subject{
         display: none;
@@ -232,20 +237,10 @@ svg{
 }
 @media(max-width:500px){
     svg{
-        width: 115%;
+        width: 90%;
     }
 }
-@media(max-width:390px){
-    .case{
-        position: relative;
-        top: 70%;
-        }
-    svg{
-        position: relative;
-        top: 100px;
-        width: 125%;
-    }
-}
+
 /* Subject page */
 body.subject{
     font-family: 'Secular One', sans-serif;
@@ -308,8 +303,7 @@ body.subject{
         grid-template-columns: repeat(2,1fr); 
     }
     .course li a{
-        letter-spacing: 3px;
-        box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+        
         padding: 5px;
     
     }
