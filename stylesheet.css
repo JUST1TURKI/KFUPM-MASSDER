@@ -237,8 +237,11 @@ svg{
 }
 @media(max-width:500px){
     svg{
-        width: 90%;
+        width: 126%;
     }
+}
+@media (max-width:390px){
+
 }
 
 /* Subject page */
