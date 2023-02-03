@@ -104,6 +104,10 @@ svg{
     color: #0c8f2f;
     transition: 0.5s;
 }
+.letGo{
+    margin-top: 10px;
+}
+
 .explore {
     letter-spacing: 1.3px;
     font-size: 16px;
@@ -112,12 +116,20 @@ svg{
     border-radius: 1000px;
     box-shadow: 12px 12px 24px #0b6623;
     padding: 7px;
-}  
+} 
+
 .massader:hover {
-    transform: scale(1.05) rotate(-1deg);
+    
  }
  .explore a{
     color:#c2fbd7;
+    margin: 15px;
+    transition: 0.5s;
+ }
+ .explore a:hover{
+    color: #15f250;
+    font-size: 16.5px;
+
  }
 .case p{
     font-family: 'Fredoka One', 'cursive';
@@ -230,14 +242,14 @@ svg{
     }
    .case{
     position: relative;
-    top: 30%;
+    top: 45%;
     left: 10%;
    }
     
 }
 @media(max-width:500px){
     svg{
-        width: 126%;
+        width: 135%;
     }
 }
 @media (max-width:390px){
