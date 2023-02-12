@@ -127,7 +127,7 @@ svg{
     transition: 0.5s;
  }
  .explore a:hover{
-    color: #15f250;
+    color: #15f250b6;
     font-size: 16.5px;
 
  }
@@ -194,7 +194,7 @@ svg{
         color: #0b6623; 
     }
     .menu-btn:hover{
-        opacity: 0.5;
+        opacity: 0.9;
     }
     .main-nav ul.main-menu{
         display: block;
